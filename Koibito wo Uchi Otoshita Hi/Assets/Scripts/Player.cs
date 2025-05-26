@@ -3,11 +3,12 @@ using System.Collections;
 using Unity.VisualScripting;
 
 [RequireComponent(typeof(Rigidbody2D))]
-public class PlayerMovement : MonoBehaviour
+public class Player : MonoBehaviour
 {
-    private Camera mainCamera;
     private Rigidbody2D rb;
     private CapsuleCollider2D capsuleCollider;
+
+    //Player Movement
 
     private Vector2 velocity;
     private float inputAxis;
@@ -25,6 +26,7 @@ public class PlayerMovement : MonoBehaviour
 
     public bool grounded {  get; private set; }
     public bool jumping { get; private set; }
+    public bool bumped { get; private set; }
     public bool doubleJumping { get; private set; }
     public bool shooting { get; private set; }
 
@@ -35,9 +37,15 @@ public class PlayerMovement : MonoBehaviour
     private int shielding => (1 << (int)Pow.shield) & state;
     private int viewing => (1 << (int)Pow.view) & state;
 
+    // Attacking
+
+    private bool isCharging;
+    private float chargeStartTime;
+
+    //
+
     private void Awake()
     {
-        mainCamera = Camera.main;
         rb = GetComponent<Rigidbody2D>();
         capsuleCollider = GetComponent<CapsuleCollider2D>();
     }
@@ -66,6 +74,8 @@ public class PlayerMovement : MonoBehaviour
         HorizontalMovement();
 
         grounded = rb.Raycast(Vector2.down);
+        bumped = rb.Raycast(Vector2.up);
+
         if ((grounded)) {
             GroundedMovement();
         }
@@ -73,11 +83,18 @@ public class PlayerMovement : MonoBehaviour
             InAirMovement();
         }
 
+        if(bumped) {
+            velocity.y = -velocity.y;
+        }
+
         ApplyGravity();
         ApplySneak();
         ApplyDash();
         ApplyShield();
         ApplyView();
+
+        StartCharging();
+        Fire();
     }
 
     private void FixedUpdate()
@@ -221,4 +238,36 @@ public class PlayerMovement : MonoBehaviour
             }
         }
     }
+
+    private void StartCharging()
+    {
+        if(Input.GetMouseButtonDown(0) && !isCharging) {
+            isCharging = true;
+            chargeStartTime = Time.time;
+        }
+    }
+
+    private void Fire()
+    {
+        if(!Input.GetMouseButtonUp(0) || !isCharging) {
+            return;
+        }
+
+        float chargeTime = Time.time - chargeStartTime;
+        float speed = 100 + 200 * chargeTime / 1000;
+        float damage = 5 + 15 * chargeTime / 1000;
+        
+        Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        Vector2 direction = (mousePos - (Vector2)(transform.position)).normalized;
+
+        GameObject arrow = ObjectPool.Instance.GetObject("Arrow", transform.position);
+        Rigidbody2D rbArrow = arrow.GetComponent<Rigidbody2D>();
+        Arrow body = rbArrow.GetComponent<Arrow>();
+
+        body.damage = damage;
+        rbArrow.velocity = direction * speed + rb.velocity;
+
+        isCharging = false;
+    }
+
 }
