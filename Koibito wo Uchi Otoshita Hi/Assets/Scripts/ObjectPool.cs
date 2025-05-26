@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class ObjectPool : MonoBehaviour
 {
-    private static ObjectPool Instance;
+    public static ObjectPool Instance;
 
     [System.Serializable]
     public class Pool
