@@ -12,6 +12,11 @@ public class CameraControl : MonoBehaviour
 
     public float scaling = 1.5f;
 
+    private bool left;
+    private bool right;
+    private bool up;
+    private bool down;
+
     private float k => Mathf.PI / (2 * lockingDuration);
 
     private void Awake()
@@ -19,10 +24,40 @@ public class CameraControl : MonoBehaviour
         TriggerNotifier.OnEnterLockArea += LockCamera;
     }
 
+    private void OnDestroy()
+    {
+        TriggerNotifier.OnEnterLockArea -= LockCamera;
+    }
+
     private void FixedUpdate()
     {
         if (!isLocked) {
-            transform.position = Vector3.Lerp(transform.position, target.position, smoothSpeed);
+            left = Input.mousePosition.x < 10;
+            right = Input.mousePosition.x + 10 >= Screen.width;
+            down = Input.mousePosition.y < 10;
+            up = Input.mousePosition.y + 10 >= Screen.height;
+
+            Vector3 transition = Vector3.zero;
+
+            if (left) {
+                transition.x -= 5;
+            }
+            if (right) {
+                transition.x += 5;
+            }
+            if (up) {
+                transition.y += 5;
+            }
+            if (down) {
+                transition.y -= 5;
+            }
+
+            if(transition != Vector3.zero) {
+                transform.position = Vector3.Lerp(transform.position, transform.position + transition, smoothSpeed);
+            }
+            else {
+                transform.position = Vector3.Lerp(transform.position, target.position, smoothSpeed);
+            }
         }
     }
 

@@ -6,7 +6,7 @@ using UnityEngine;
 public class TriggerNotifier : MonoBehaviour
 {
     public delegate void TriggerEvent();
-    public static TriggerEvent OnEnterLockArea;
+    public static event TriggerEvent OnEnterLockArea;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
