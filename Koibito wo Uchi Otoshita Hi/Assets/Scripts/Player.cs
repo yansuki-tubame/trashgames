@@ -42,12 +42,27 @@ public class Player : MonoBehaviour
     private bool isCharging;
     private float chargeStartTime;
 
-    //
+    // Surviving
+
+    private float maxHealth = 1.0f;
+    private float currentHealth;
+    private float minDurationBetweenHurts = 1.0f;
+    private bool isInvincible = false;
+
+    //Shielding
+
+    private float maxEnergy = 1.0f;
+    private float currentEnergy;
+    private float energyDropConstant = 1.0f;
+    private float singleHit => maxEnergy * 0.1f;
+    private float energyWaste => maxEnergy * 0.05f;
 
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
         capsuleCollider = GetComponent<CapsuleCollider2D>();
+        currentHealth = maxHealth;
+        currentEnergy = maxEnergy;
     }
 
     private void OnEnable()
@@ -86,7 +101,7 @@ public class Player : MonoBehaviour
         if(bumped) {
             velocity.y = -velocity.y;
         }
-
+        Healing();
         ApplyGravity();
         ApplySneak();
         ApplyDash();
@@ -102,6 +117,39 @@ public class Player : MonoBehaviour
         Vector2 position = rb.position;
         position += Time.fixedDeltaTime * velocity;
         rb.MovePosition(position);
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.collider.CompareTag("EnemyBullet")) {
+            TakeDamage(collision.collider.GetComponent<EnemyBullet>().GetDamage()); 
+            // depending on the actual class type of enemy's bullet
+        }
+    }
+
+    private void TakeDamage(float damage)
+    {
+        if (!isInvincible) {
+            currentHealth -= damage;
+            CheckDeaths();
+            StartCoroutine(StartInvincibility());
+        } else if (shielding != 0 && currentEnergy > 0f) {
+            currentEnergy = Mathf.Max(currentEnergy - singleHit, 0f);
+        }
+    }
+
+    private void CheckDeaths()
+    {
+        if (currentHealth <= 0) {
+            // wait for further connections
+        }
+    }
+
+    private IEnumerator StartInvincibility()
+    {
+        isInvincible = true;
+        yield return new WaitForSeconds(minDurationBetweenHurts);
+        isInvincible = false;
     }
 
     private void HorizontalMovement()
@@ -143,6 +191,25 @@ public class Player : MonoBehaviour
         velocity.y = Mathf.Max(velocity.y, gravity);
     }
 
+    private void Healing()
+    {
+        if (Input.GetKey(KeyCode.Q) && currentEnergy > maxEnergy * 0.2f) {
+            currentEnergy -= maxEnergy * 0.2f;
+            StartCoroutine(StartHealing());
+        }
+    }
+
+    private IEnumerator StartHealing()
+    {
+        float healthGap = maxHealth - currentHealth;
+        float healedHealth = 0f;
+        while (healedHealth < healthGap) {
+            healedHealth = Mathf.Max(healthGap, healedHealth + 1.0f);
+            currentHealth = Mathf.Max(maxHealth, currentHealth + 1.0f);
+            yield return new WaitForSeconds(0.5f);
+        }
+    }
+
     private void ApplySneak()
     {
         if(sneaking != 0) {
@@ -169,8 +236,10 @@ public class Player : MonoBehaviour
                 return;
             }
             if (Input.GetKeyDown(KeyCode.F)) {
+                state &= (1 << (int)Pow.dash);
                 StartCoroutine(StartCoolDown());
                 StartCoroutine(StartDashing());
+                state ^= (1 << (int)Pow.dash);
             }
         }
     }
@@ -190,6 +259,7 @@ public class Player : MonoBehaviour
 
     private IEnumerator StartDashing()
     {
+        isInvincible = true;
         currentSpeed = dashSpeed;
 
         float duration = dashTime;
@@ -199,6 +269,7 @@ public class Player : MonoBehaviour
         }
 
         currentSpeed = moveSpeed;
+        isInvincible = false;
     }
 
     private void ApplyShield()
@@ -206,7 +277,7 @@ public class Player : MonoBehaviour
         if (shielding != 0) {
             if (!Input.GetKey(KeyCode.E)) {
                 state ^= (1 << (int)Pow.shield);
-
+                StopCoroutine(OpenShield());
             }
         }
         else {
@@ -215,8 +286,16 @@ public class Player : MonoBehaviour
             }
             if (Input.GetKey(KeyCode.E)) {
                 state &= (1 << (int)Pow.shield);
-
+                StartCoroutine(OpenShield());
             }
+        }
+    }
+
+    private IEnumerator OpenShield()
+    {
+        while (currentEnergy > 0) {
+            currentEnergy -= Time.deltaTime * energyDropConstant;
+            yield return null;
         }
     }
 
