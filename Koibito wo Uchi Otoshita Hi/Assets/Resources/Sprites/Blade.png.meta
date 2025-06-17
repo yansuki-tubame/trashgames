@@ -1,0 +1,544 @@
+fileFormatVersion: 2
+guid: 50d3ba6bd948a384eb0bf576a83c5c27
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2678498615165238795
+    second: Blade_0
+  - first:
+      213: 8973553475351863548
+    second: Blade_1
+  - first:
+      213: 2968531407573341186
+    second: Blade_2
+  - first:
+      213: 7628969496186625764
+    second: Blade_3
+  - first:
+      213: -5149512742951977276
+    second: Blade_4
+  - first:
+      213: 1683611451575150653
+    second: Blade_5
+  - first:
+      213: -1858759985623326127
+    second: Blade_6
+  - first:
+      213: -7486732381521296238
+    second: Blade_7
+  - first:
+      213: 7496531878079528319
+    second: Blade_8
+  - first:
+      213: -4115089876531018149
+    second: Blade_9
+  - first:
+      213: -4158126296085585784
+    second: Blade_10
+  - first:
+      213: -5167961736763986929
+    second: Blade_11
+  - first:
+      213: 2981287307628907606
+    second: Blade_12
+  - first:
+      213: 8743902534870943180
+    second: Blade_13
+  - first:
+      213: -9195662425529041903
+    second: Blade_14
+  - first:
+      213: 8219640455761899227
+    second: Blade_15
+  - first:
+      213: -975547566157202392
+    second: Blade_16
+  - first:
+      213: 8950225187569143237
+    second: Blade_17
+  - first:
+      213: -3714723652091659357
+    second: Blade_18
+  - first:
+      213: 375120761186840896
+    second: Blade_19
+  - first:
+      213: 7287662790248076598
+    second: Blade_20
+  - first:
+      213: -5584088427703689160
+    second: Blade_21
+  - first:
+      213: 1607071162953727074
+    second: Blade_22
+  - first:
+      213: 5960681390305698424
+    second: Blade_23
+  - first:
+      213: 171117849944226270
+    second: Blade_24
+  - first:
+      213: 1182676614164270495
+    second: Blade_25
+  - first:
+      213: 6707878921656828271
+    second: Blade_26
+  - first:
+      213: -5456749695945257995
+    second: Blade_27
+  - first:
+      213: 1509111725965578491
+    second: Blade_28
+  - first:
+      213: -1836056753058223102
+    second: Blade_29
+  - first:
+      213: 3795869243527981946
+    second: Blade_30
+  - first:
+      213: 6205459022668895343
+    second: Blade_31
+  - first:
+      213: 6831456727107849007
+    second: Blade_32
+  - first:
+      213: -2642721255311638269
+    second: Blade_33
+  - first:
+      213: 6922885848609858524
+    second: Blade_34
+  - first:
+      213: 2245078159403366672
+    second: Blade_35
+  - first:
+      213: -2045095238875317697
+    second: Blade_36
+  - first:
+      213: -7023804025773211596
+    second: Blade_37
+  - first:
+      213: -890029586298951394
+    second: Blade_38
+  - first:
+      213: -7760104828998618212
+    second: Blade_39
+  - first:
+      213: 6841533494867333831
+    second: Blade_40
+  - first:
+      213: -1073419253518738693
+    second: Blade_41
+  - first:
+      213: 8757571372508985572
+    second: Blade_42
+  - first:
+      213: 6640984276816606176
+    second: Blade_43
+  - first:
+      213: 7789072812713164754
+    second: Blade_44
+  - first:
+      213: 2381532934544863546
+    second: Blade_45
+  - first:
+      213: 2773998370666156446
+    second: Blade_46
+  - first:
+      213: 7193911540852386421
+    second: Blade_47
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 40
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Blade_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 384
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a5c406dedc2d5d4fbadfe9de7175ab3
+      internalID: 343906104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blade_1
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 384
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65a0751e4cb321544a10246daef6cd03
+      internalID: 40475156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blade_2
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 0
+        width: 384
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f15f7cfaa180cc643b435ae53a6a81f5
+      internalID: -2001687507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blade_3
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 0
+        width: 384
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ca893e4e8ea34249a275d162cb71af9
+      internalID: 1304741465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blade_4
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 0
+        width: 384
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1381a18a11fe251489f974c6ee8c1220
+      internalID: -628338182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blade_5
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 0
+        width: 384
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f8a12803bf88954796a1fd27fac1f6f
+      internalID: 701569538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blade_6
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 0
+        width: 384
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cef635d601e7ce4291e8c3e9caae2b6
+      internalID: 578397551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blade_7
+      rect:
+        serializedVersion: 2
+        x: 2688
+        y: 0
+        width: 384
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b309163efde3a4d4fa6eb4df4197a30b
+      internalID: -8980009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blade_8
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 0
+        width: 384
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a7ec65dd90582a4ab565a1bb56633a7
+      internalID: -1312817627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blade_9
+      rect:
+        serializedVersion: 2
+        x: 3456
+        y: 0
+        width: 384
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45850ef894e5384469eb4c619f2596c9
+      internalID: 176903370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blade_10
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 0
+        width: 384
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be0e29be952f95945aa663de90142bfb
+      internalID: -1238572586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blade_11
+      rect:
+        serializedVersion: 2
+        x: 4224
+        y: 0
+        width: 384
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6907db5e7c94ae947a94fc5ed3fea1cd
+      internalID: -1923678713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blade_12
+      rect:
+        serializedVersion: 2
+        x: 4608
+        y: 0
+        width: 384
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ade27769d8339341bffc77653cde466
+      internalID: 519967495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 648df88719b0b7a4db332641fdf186e0
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Blade_0: 343906104
+      Blade_1: 40475156
+      Blade_10: -1238572586
+      Blade_11: -1923678713
+      Blade_12: 519967495
+      Blade_2: -2001687507
+      Blade_3: 1304741465
+      Blade_4: -628338182
+      Blade_5: 701569538
+      Blade_6: 578397551
+      Blade_7: -8980009
+      Blade_8: -1312817627
+      Blade_9: 176903370
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

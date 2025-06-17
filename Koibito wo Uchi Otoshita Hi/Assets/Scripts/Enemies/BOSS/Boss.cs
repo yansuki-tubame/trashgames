@@ -31,7 +31,6 @@ public class Boss : Enemy
     protected override void Start()
     {
         base.Start();
-        health = 100.0f;
         moveSpeed = 5.5f;
         attackCoolDown = 5.0f;
         chargeSpeed = 40.0f;
@@ -45,4 +44,5 @@ public class Boss : Enemy
             stateMachine.ChangeState(deathState);
         }
     }
+   
 }

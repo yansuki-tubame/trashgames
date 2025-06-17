@@ -3,27 +3,24 @@ using System.Collections.Generic;
 using Unity.Mathematics;
 using UnityEngine;
 
-public class ChaseBullet : MonoBehaviour
+public class ChaseBullet : EnemyBullet
 {
-    public GameObject Chasebullet;
-    private Transform player;
-    public int damage;
-    public float speed = 30.0f;
+    
     public float chaseTime = 5.0f;
     public float plastance;
     public float chaseSpeed = 10.0f;
     public float BulletDistance = 50.0f;
+    private Transform player;
     private Vector2 vector2;
-    private Rigidbody2D rb;
-    private Transform trans;
     private Vector2 startPos;
     void Start()
     {
-        plastance = 300.0f;
         player = GameObject.Find("Player").transform;
-        vector2 = new Vector2(1.0f, 0.0f);
         rb = GetComponent<Rigidbody2D>();
         trans = GetComponent<Transform>();
+        speed = 30.0f;
+        plastance = 300.0f;
+        vector2 = new Vector2(1.0f, 0.0f);
         startPos = trans.position;
         rb.velocity = trans.rotation * vector2 * chaseSpeed;
     }

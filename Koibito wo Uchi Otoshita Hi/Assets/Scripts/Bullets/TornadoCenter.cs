@@ -2,22 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TornadoCenter : MonoBehaviour
+public class TornadoCenter : EnemyBullet
 {
-    private Transform player;
-    public int damage;
     public float plastance = 3.0f;
     public float chaseSpeed = 4.0f;
     public float LifeTime = 10.0f;
+    private Transform player;
     private Vector2 vector2;
-    private Rigidbody2D rb;
-    private Transform trans;
     void Start()
     {
         player = GameObject.Find("Player").transform;
-        vector2 = new Vector2(1.0f, 0.0f);
         rb = GetComponent<Rigidbody2D>();
         trans = GetComponent<Transform>();
+        vector2 = new Vector2(1.0f, 0.0f);
         rb.gravityScale = 0.0f;
     }
 

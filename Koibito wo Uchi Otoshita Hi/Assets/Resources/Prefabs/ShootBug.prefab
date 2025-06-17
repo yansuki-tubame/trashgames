@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 257865920301935662}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: ShootBugGroundcheck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -46,9 +46,9 @@ GameObject:
   - component: {fileID: 7539557199183692200}
   - component: {fileID: 5354971987301924055}
   - component: {fileID: 7642799153821497789}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: ShootBug
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -252,6 +252,7 @@ MonoBehaviour:
   moveSpeed: 0
   idleTime: 2
   battleTime: 7
+  health: 0
   hearRange: 0
   detectRange: 0
   attackDistance: 1

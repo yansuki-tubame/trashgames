@@ -39,7 +39,7 @@ public class BossShootState : EnemyState
             {
                 Quaternion quaternion = Quaternion.Euler(0, 0, angle+i);
                 Vector3 vec = quaternion * new Vector3(1.0f, 0.0f, 0.0f);
-                enemy.bulletsummoner.summonBullet(enemy.transform.position + vec, quaternion, "Prefabs/Bullet");
+                enemy.bulletsummoner.summonBullet(enemy.transform.position + vec, quaternion, "Prefabs/OrdinaryBullet");
             }
             angle -= 20;
         }

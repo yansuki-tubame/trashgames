@@ -15,6 +15,7 @@ public class Enemy : Entity
     public float health;
     public float hearRange;
     public float detectRange;
+    public float contactDamage;
     public float attackDistance = 1.0f;
     public float attackCoolDown;
     [HideInInspector] public float lastTimeAttacked;
@@ -53,5 +54,13 @@ public class Enemy : Entity
         Gizmos.color = Color.yellow;
         Gizmos.DrawLine(transform.position, new Vector3(transform.position.x + attackDistance * facingDir, transform.position.y));
 
+    }
+    public void EndHurt()
+    {
+        this.anim.SetBool("Hurt", false);
+    }
+    public void EndState()
+    {
+        stateMachine.currentState.Exit();
     }
 }

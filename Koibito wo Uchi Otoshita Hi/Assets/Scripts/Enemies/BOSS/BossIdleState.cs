@@ -18,7 +18,7 @@ public class BossIdleState : EnemyState
     {
         base.Enter();
         player = GameObject.Find("Player").transform;
-        stateTimer = 0.8f;
+        stateTimer = 0.2f;
     }
     public override void Exit()
     {
@@ -33,16 +33,16 @@ public class BossIdleState : EnemyState
         {
             if (Vector2.Distance(enemy.transform.position, player.transform.position) < enemy.detectRange && enemy.IsPlayerSeen())
             {
-                int rand = Random.Range(0, 11);
-                if (0 <= rand && rand <= 2)
+                int rand = Random.Range(0, 21);
+                if (0 <= rand && rand <= 4)
                 {
                     stateMachine.ChangeState(enemy.chargeState);
                 }
-                else if (3 <= rand && rand <= 4)
+                else if (5 <= rand && rand <= 6)
                 {
                     stateMachine.ChangeState(enemy.shootState);
                 }
-                else if (5 <= rand && rand <= 7)
+                else if (7 <= rand && rand <= 14)
                 {
                     stateMachine.ChangeState(enemy.missleState);
                 }

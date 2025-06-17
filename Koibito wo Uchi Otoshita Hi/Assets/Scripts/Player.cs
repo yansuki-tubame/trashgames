@@ -1,12 +1,13 @@
 using UnityEngine;
 using System.Collections;
 using Unity.VisualScripting;
+using System;
 
 [RequireComponent(typeof(Rigidbody2D))]
 public class Player : MonoBehaviour
 {
     private Rigidbody2D rb;
-    private CapsuleCollider2D capsuleCollider;
+    private BoxCollider2D Collider;
 
     //Player Movement
 
@@ -18,7 +19,10 @@ public class Player : MonoBehaviour
     public float moveSpeed = 1.0f;
     public float dashSpeed = 1.0f;
     public float jumpSpeed = 1.0f;
-    public float gravity = -1.0f;
+    public float gravity = -10.0f;
+    public float facingDir = 1.0f;
+    public float acceleration = 60.0f;
+    public LayerMask GroundLayer;
 
     public bool cooledDown = true; 
     public float dashTime = 1.0f;
@@ -51,16 +55,17 @@ public class Player : MonoBehaviour
 
     //Shielding
 
-    private float maxEnergy = 1.0f;
-    private float currentEnergy;
+    public float maxEnergy = 1.0f;
+    public float currentEnergy;
     private float energyDropConstant = 1.0f;
     private float singleHit => maxEnergy * 0.1f;
     private float energyWaste => maxEnergy * 0.05f;
 
     private void Awake()
     {
+        GroundLayer = LayerMask.GetMask("Ground");
         rb = GetComponent<Rigidbody2D>();
-        capsuleCollider = GetComponent<CapsuleCollider2D>();
+        Collider = GetComponent<BoxCollider2D>();
         currentHealth = maxHealth;
         currentEnergy = maxEnergy;
     }
@@ -72,7 +77,7 @@ public class Player : MonoBehaviour
         currentSpeed = moveSpeed;
         velocity = Vector2.zero;
         rb.isKinematic = false;
-        capsuleCollider.enabled = true;
+        Collider.enabled = true;
     }
 
     private void OnDisable()
@@ -81,7 +86,7 @@ public class Player : MonoBehaviour
         inputAxis = 0;
         velocity = Vector2.zero;
         rb.isKinematic = true;
-        capsuleCollider.enabled = false;
+        Collider.enabled = false;
     }
 
     private void Update()
@@ -91,7 +96,7 @@ public class Player : MonoBehaviour
         grounded = rb.Raycast(Vector2.down);
         bumped = rb.Raycast(Vector2.up);
 
-        if ((grounded)) {
+        if (grounded) {
             GroundedMovement();
         }
         else {
@@ -107,7 +112,6 @@ public class Player : MonoBehaviour
         ApplyDash();
         ApplyShield();
         ApplyView();
-
         StartCharging();
         Fire();
     }
@@ -122,8 +126,7 @@ public class Player : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.collider.CompareTag("EnemyBullet")) {
-            TakeDamage(collision.collider.GetComponent<EnemyBullet>().GetDamage()); 
-            // depending on the actual class type of enemy's bullet
+            TakeDamage(collision.collider.GetComponent<EnemyBullet>().damage);
         }
     }
 
@@ -154,8 +157,12 @@ public class Player : MonoBehaviour
 
     private void HorizontalMovement()
     {
-        inputAxis = dashing == 0 ? Input.GetAxis("Horizontal") : transform.rotation.y == 0 ? 1 : -1;
-        velocity.x = Mathf.MoveTowards(velocity.x, inputAxis * currentSpeed, Time.deltaTime * currentSpeed);
+        inputAxis = Input.GetAxis("Horizontal");
+        if (inputAxis * facingDir < 0)
+        {
+            Flip();
+        }
+        velocity.x = Mathf.MoveTowards(velocity.x, inputAxis * currentSpeed, Time.deltaTime * acceleration);
 
         if (rb.Raycast(velocity.x * Vector2.right)) {
             velocity.x = 0f;
@@ -167,9 +174,19 @@ public class Player : MonoBehaviour
         velocity.y = Mathf.Max(velocity.y, 0f);
         jumping = velocity.y > 0f;
         doubleJumping = false;
-        if (state != 0 && Input.GetButtonDown("Jump")) {
+        if (!jumping && Input.GetKeyDown(KeyCode.Space)) {
             velocity.y = jumpSpeed;
             jumping = true;
+            Debug.Log("!jumping && space");
+        } else if (jumping && Input.GetKeyDown(KeyCode.Space))
+        {
+            velocity.y = jumpSpeed;
+            doubleJumping = true;
+            Debug.Log("jumping && space");
+        }
+        else
+        {
+            Debug.Log("!space");
         }
     }
 
@@ -179,7 +196,7 @@ public class Player : MonoBehaviour
             return;
         }
 
-        if (state != 0 && Input.GetButtonDown("Jump")) {
+        if (Input.GetKeyDown(KeyCode.Space)) {
             velocity.y = jumpSpeed;
             doubleJumping = true;
         }
@@ -188,7 +205,6 @@ public class Player : MonoBehaviour
     private void ApplyGravity()
     {
         velocity.y += gravity;
-        velocity.y = Mathf.Max(velocity.y, gravity);
     }
 
     private void Healing()
@@ -223,7 +239,7 @@ public class Player : MonoBehaviour
                 return;
             }
             if(Input.GetKey(KeyCode.LeftShift)) {
-                state &= (1 << (int)Pow.sneak);
+                state |= (1 << (int)Pow.sneak);
                 currentSpeed = sneakSpeed;
             }
         }
@@ -236,12 +252,12 @@ public class Player : MonoBehaviour
                 return;
             }
             if (Input.GetKeyDown(KeyCode.F)) {
-                state &= (1 << (int)Pow.dash);
+                state |= (1 << (int)Pow.dash);
                 StartCoroutine(StartCoolDown());
                 StartCoroutine(StartDashing());
                 state ^= (1 << (int)Pow.dash);
             }
-        }
+        } 
     }
 
     private IEnumerator StartCoolDown()
@@ -261,7 +277,6 @@ public class Player : MonoBehaviour
     {
         isInvincible = true;
         currentSpeed = dashSpeed;
-
         float duration = dashTime;
         while(duration > 0) {
             duration -= Time.deltaTime;
@@ -285,7 +300,7 @@ public class Player : MonoBehaviour
                 return;
             }
             if (Input.GetKey(KeyCode.E)) {
-                state &= (1 << (int)Pow.shield);
+                state |= (1 << (int)Pow.shield);
                 StartCoroutine(OpenShield());
             }
         }
@@ -312,7 +327,7 @@ public class Player : MonoBehaviour
                 return;
             }
             if (Input.GetKey(KeyCode.V)) {
-                state &= (1 << (int)Pow.view);
+                state |= (1 << (int)Pow.view);
 
             }
         }
@@ -348,5 +363,9 @@ public class Player : MonoBehaviour
 
         isCharging = false;
     }
-
+    public virtual void Flip()
+    {
+        facingDir = -1 * facingDir;
+        transform.Rotate(0, 180, 0);
+    }
 }

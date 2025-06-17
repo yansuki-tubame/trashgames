@@ -7,6 +7,9 @@ TagManager:
   - Red
   - Yellow
   - Blue
+  - EnemyBullet
+  - Enemy
+  - Block
   layers:
   - Default
   - TransparentFX
@@ -19,8 +22,8 @@ TagManager:
   - Ground
   - Bullet
   - Plate
-  - 
-  - 
+  - Arrow
+  - Blade
   - 
   - 
   - 

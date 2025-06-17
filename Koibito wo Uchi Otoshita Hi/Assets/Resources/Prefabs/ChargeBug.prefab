@@ -15,9 +15,9 @@ GameObject:
   - component: {fileID: 3283664707091594250}
   - component: {fileID: 105785780536780148}
   - component: {fileID: 9025409253664803947}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: ChargeBug
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -187,6 +187,7 @@ MonoBehaviour:
   moveSpeed: 8.8
   idleTime: 2
   battleTime: 7
+  health: 0
   hearRange: 0
   detectRange: 0
   attackDistance: 0
@@ -235,7 +236,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2916757052248077285}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: ChargeBugGroundcheck
   m_TagString: Untagged
   m_Icon: {fileID: 0}

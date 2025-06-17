@@ -22,7 +22,7 @@ public class ShootBugAttackState : EnemyState
         }
         for (int i = 0; i <= 60; i += 15)
         {
-            enemy.bulletsummoner.summonBullet(enemy.transform.position, Quaternion.Euler(0, 0, enemy.facingDir > 0 ? i : 180 - i), "Prefabs/Bullet");
+            enemy.bulletsummoner.summonBullet(enemy.transform.position, Quaternion.Euler(0, 0, enemy.facingDir > 0 ? i : 180 - i), "Prefabs/OrdinaryBullet");
         }
     }                                       
 
