@@ -10,7 +10,7 @@ public class Player : MonoBehaviour
 
     //Player Movement
 
-    private Vector2 velocity;
+    public Vector2 velocity;
     private float inputAxis;
 
     public float currentSpeed;
@@ -20,11 +20,11 @@ public class Player : MonoBehaviour
     public float jumpSpeed = 1.0f;
     public float gravity = -1.0f;
 
-    public bool cooledDown = true; 
+    public bool cooledDown = true;
     public float dashTime = 1.0f;
     public float dashCoolDownTime = 1.0f;
 
-    public bool grounded {  get; private set; }
+    public bool grounded { get; private set; }
     public bool jumping { get; private set; }
     public bool bumped { get; private set; }
     public bool doubleJumping { get; private set; }
@@ -39,20 +39,20 @@ public class Player : MonoBehaviour
 
     // Attacking
 
-    private bool isCharging;
+    public bool isCharging;
     private float chargeStartTime;
 
     // Surviving
-
-    private float maxHealth = 1.0f;
-    private float currentHealth;
-    private float minDurationBetweenHurts = 1.0f;
+    [Header("Surviving")]
+    public float maxHealth = 1.0f;
+    public float currentHealth;
+    public float minDurationBetweenHurts = 1.0f;
     private bool isInvincible = false;
 
     //Shielding
-
-    private float maxEnergy = 1.0f;
-    private float currentEnergy;
+    [Header("Shield")]
+    public float maxEnergy = 1.0f;
+    public float currentEnergy;
     private float energyDropConstant = 1.0f;
     private float singleHit => maxEnergy * 0.1f;
     private float energyWaste => maxEnergy * 0.05f;
@@ -122,8 +122,8 @@ public class Player : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.collider.CompareTag("EnemyBullet")) {
-            TakeDamage(collision.collider.GetComponent<EnemyBullet>().GetDamage()); 
-            // depending on the actual class type of enemy's bullet
+         TakeDamage(collision.collider.GetComponent<EnemyBullet>().GetDamage()); 
+            //depending on the actual class type of enemy's bullet
         }
     }
 

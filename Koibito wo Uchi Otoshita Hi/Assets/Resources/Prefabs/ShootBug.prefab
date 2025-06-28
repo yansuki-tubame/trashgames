@@ -239,19 +239,20 @@ MonoBehaviour:
   wallCheckDistance: 0
   GroundLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 256
   WallLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 128
   BlockLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 384
   PlayerLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   moveSpeed: 0
   idleTime: 2
   battleTime: 7
+  health: 0
   hearRange: 0
   detectRange: 0
   attackDistance: 1
