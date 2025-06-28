@@ -22,6 +22,7 @@ public class Player2 : Entity
     public float InvincibleTime;
     public bool isCharging;
     public float chargeTime;
+    public float detectRatio;
     [Header("Cooldown Info")]
     public float dashCooldown;
     public float hurtCooldown;

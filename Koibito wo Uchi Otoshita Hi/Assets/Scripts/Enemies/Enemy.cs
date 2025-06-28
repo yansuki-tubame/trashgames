@@ -10,7 +10,7 @@ public class Enemy : Entity
     public float moveSpeed;
     public float idleTime = 2.0f;
     public float battleTime = 7.0f;
-    private Transform player;
+    private GameObject player;
     [Header("Attack Info")]
     public float health;
     public float hearRange;
@@ -25,7 +25,7 @@ public class Enemy : Entity
     protected override void Awake()
     {
         base.Awake();
-        player = GameObject.Find("Player").transform;
+        player = GameObject.Find("Player");
         this.PlayerLayer = LayerMask.GetMask("Player");
         stateMachine = new EnemyStateMachine();
     }
@@ -41,7 +41,7 @@ public class Enemy : Entity
         Vector2 A = player.transform.position - transform.position;
         Vector2 B = new Vector2(facingDir, 0);
         float angle = Vector2.Angle(A, B);
-        if ((angle < 45.0f && !IsPlayerBlocked() && Vector2.Distance(transform.position, player.transform.position) <= detectRange) || Vector2.Distance(transform.position, player.transform.position) <= hearRange)
+        if ((angle < 45.0f && !IsPlayerBlocked() && Vector2.Distance(transform.position, player.transform.position) <= detectRange) || Vector2.Distance(transform.position, player.transform.position) <= hearRange * player.GetComponent<Player2>().detectRatio)
         {
             return true;
         }

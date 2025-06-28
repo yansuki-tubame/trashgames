@@ -37,5 +37,9 @@ public class PlayerMoveState : PlayerState
         {
             stateMachine.ChangeState(player.dashState);
         }
+        if (Input.GetKeyDown(KeyCode.LeftControl))
+        {
+            stateMachine.ChangeState(player.sneakState);
+        }
     }
 }
