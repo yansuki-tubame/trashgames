@@ -1,0 +1,90 @@
+
+mainchara.png
+size: 511,517
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+backarm
+  rotate: true
+  xy: 409, 19
+  size: 62, 49
+  orig: 67, 65
+  offset: 3, 16
+  index: -1
+backfoot
+  rotate: false
+  xy: 412, 417
+  size: 70, 98
+  orig: 79, 108
+  offset: 5, 6
+  index: -1
+backleg
+  rotate: false
+  xy: 340, 2
+  size: 67, 155
+  orig: 76, 158
+  offset: 4, 1
+  index: -1
+bag
+  rotate: false
+  xy: 2, 13
+  size: 176, 502
+  orig: 178, 506
+  offset: 1, 3
+  index: -1
+bib1
+  rotate: true
+  xy: 409, 83
+  size: 74, 56
+  orig: 76, 58
+  offset: 1, 1
+  index: -1
+face1
+  rotate: false
+  xy: 406, 159
+  size: 103, 107
+  orig: 105, 109
+  offset: 1, 1
+  index: -1
+frontarm
+  rotate: false
+  xy: 460, 23
+  size: 47, 58
+  orig: 54, 62
+  offset: 1, 3
+  index: -1
+frontfoot
+  rotate: true
+  xy: 412, 323
+  size: 92, 77
+  orig: 100, 90
+  offset: 3, 6
+  index: -1
+frontleg
+  rotate: true
+  xy: 180, 200
+  size: 66, 224
+  orig: 66, 224
+  offset: 0, 0
+  index: -1
+hair1
+  rotate: true
+  xy: 180, 268
+  size: 247, 230
+  orig: 249, 232
+  offset: 1, 1
+  index: -1
+jacket1
+  rotate: true
+  xy: 412, 271
+  size: 50, 58
+  orig: 78, 73
+  offset: 14, 12
+  index: -1
+pantskirt1
+  rotate: false
+  xy: 180, 7
+  size: 158, 191
+  orig: 167, 202
+  offset: 3, 8
+  index: -1
