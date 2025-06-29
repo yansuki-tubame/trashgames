@@ -12,13 +12,13 @@ public class PlayerSpineAnimator : MonoBehaviour
     public float animationBlendTime = 0.2f;// 动画混合时间（过渡平滑度）
     #endregion
 
-    private Player player;
+    private Player2 player;
     private Spine.AnimationState animState;      // Spine 动画状态机
     private float currentScaleX = 1f;      // 当前 X 轴缩放（1=左，-1=右，适配默认朝左）
 
     void Awake()
     {
-        player = GetComponent<Player>();
+        player = GetComponent<Player2>();
         animState = skeletonAnim.AnimationState;
         animState.SetAnimation(0, idleAnimName, true); // 初始播放待机（朝左）
     }
@@ -38,7 +38,7 @@ public class PlayerSpineAnimator : MonoBehaviour
     /// </summary>
     void FlipCharacterByDirection()
     {
-        float moveDir = Mathf.Sign(player.velocity.x); // 移动方向（1=右，-1=左，0=静止）
+        float moveDir = Mathf.Sign(player.rb.velocity.x); // 移动方向（1=右，-1=左，0=静止）
 
         if (moveDir == 1) // 向右移动 → 需要翻转朝右（ScaleX=-1）
         {
@@ -64,7 +64,7 @@ public class PlayerSpineAnimator : MonoBehaviour
     /// </summary>
     void UpdateAnimationState()
     {
-        bool isMoving = Mathf.Abs(player.velocity.x) > 0.1f; // 移动阈值（避免抖动）
+        bool isMoving = player.stateMachine.currentState==player.moveState; // 移动阈值（避免抖动）
         string targetAnim = isMoving ? walkAnimName : idleAnimName;
 
         TrackEntry currentTrack = animState.GetCurrent(0);

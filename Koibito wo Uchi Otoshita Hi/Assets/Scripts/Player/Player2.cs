@@ -37,6 +37,7 @@ public class Player2 : Entity
     protected override void Awake()
     {
         base.Awake();
+        detectRatio = 1.0f;
         currentHealth = maxHealth;
         stateMachine = new PlayerStateMachine();
         idleState= new PlayerIdleState(stateMachine,this,"Idle");
@@ -89,9 +90,11 @@ public class Player2 : Entity
         if (Input.GetMouseButton(0))
         {
             chargeTime += Time.deltaTime;
+            isCharging = true;  
         }
         if (Input.GetMouseButtonUp(0))
         {
+            isCharging = false;
             float speed = Mathf.Min(20 + 10 * chargeTime, 60.0f);
             float damage = Mathf.Min(2 + 20 * chargeTime, 80.0f);
             chargeTime = 0.0f;
@@ -110,7 +113,7 @@ public class Player2 : Entity
     {
         if (Input.GetKey(KeyCode.LeftShift) && attackCooldown<=0.0f) 
         {
-            attackCooldown = 0.6f;
+            attackCooldown = 0.8f;
             Vector3 vec = transform.position + new Vector3(facingDir * 2.0f, 0);
             Quaternion quaternion = Quaternion.AngleAxis(facingDir>0?0:180, Vector3.forward);
             GameObject blade = Instantiate(Resources.Load<GameObject>("Prefabs/Blade"), vec, quaternion);

@@ -11,7 +11,7 @@ public class PlayerSneakState : PlayerState
     public override void Enter()
     {
         base.Enter();
-        player.detectRatio = 0.0f;
+        player.detectRatio = 0.5f;
 
     }
     public override void Exit()

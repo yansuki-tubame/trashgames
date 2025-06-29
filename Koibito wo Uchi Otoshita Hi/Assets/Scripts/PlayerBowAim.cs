@@ -9,12 +9,12 @@ public class PlayerBowAim : MonoBehaviour
     public float rotationOffset = 90f;  // 旋转偏移（调整弓的指向，根据美术需求）
     #endregion
 
-    private Player player;
+    private Player2 player;
     private Vector3 mouseWorldPos;      // 鼠标世界坐标
 
     void Awake()
     {
-        player = GetComponent<Player>();
+        player = GetComponent<Player2>();
         // 初始隐藏弓和准星
         bowTransform.gameObject.SetActive(false);
         arrowIndicator.gameObject.SetActive(false);
@@ -22,10 +22,10 @@ public class PlayerBowAim : MonoBehaviour
 
     void Update()
     {
-        if (player.isCharging)
+        if (player.isCharging||true)
         {
             // 1. 显示弓和准星（若未激活）
-            if (!bowTransform.gameObject.activeSelf)
+            if (!bowTransform.gameObject.activeSelf||true)
             {
                 bowTransform.gameObject.SetActive(true);
                 arrowIndicator.gameObject.SetActive(true);
