@@ -1,0 +1,812 @@
+fileFormatVersion: 2
+guid: 85972c8532afc874bb5c33f41cb366e3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2423027278194875724
+    second: PlayerAir_0
+  - first:
+      213: 8546447709711286986
+    second: PlayerAir_1
+  - first:
+      213: -3675146867783608219
+    second: PlayerAir_2
+  - first:
+      213: -8924181615582341053
+    second: PlayerAir_3
+  - first:
+      213: -6518789868644883409
+    second: PlayerAir_4
+  - first:
+      213: 1896415137694295097
+    second: PlayerAir_5
+  - first:
+      213: 6376089536374673426
+    second: PlayerAir_6
+  - first:
+      213: -8473757248648792922
+    second: PlayerAir_7
+  - first:
+      213: 7779518839599480907
+    second: PlayerAir_8
+  - first:
+      213: 575292092687455873
+    second: PlayerAir_9
+  - first:
+      213: -1366462181883613953
+    second: PlayerAir_10
+  - first:
+      213: 6330202117598077891
+    second: PlayerAir_11
+  - first:
+      213: 2203951418355101262
+    second: PlayerAir_12
+  - first:
+      213: -8093355610903598266
+    second: PlayerAir_13
+  - first:
+      213: -2081952302642221450
+    second: PlayerAir_14
+  - first:
+      213: 3101174987498265977
+    second: PlayerAir_15
+  - first:
+      213: -2732657038678617800
+    second: PlayerAir_16
+  - first:
+      213: 8014123997485394968
+    second: PlayerAir_17
+  - first:
+      213: 8681432743215865161
+    second: PlayerAir_18
+  - first:
+      213: -4035538717198181127
+    second: PlayerAir_19
+  - first:
+      213: -5524747754472746285
+    second: PlayerAir_20
+  - first:
+      213: -1573108431277277434
+    second: PlayerAir_21
+  - first:
+      213: 1652180937920210002
+    second: PlayerAir_22
+  - first:
+      213: -1114789300233424403
+    second: PlayerAir_23
+  - first:
+      213: -8364776318576683161
+    second: PlayerAir_24
+  - first:
+      213: -9182025534987574041
+    second: PlayerAir_25
+  - first:
+      213: -6397340438783940346
+    second: PlayerAir_26
+  - first:
+      213: -8351785672423991703
+    second: PlayerAir_27
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PlayerAir_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5
+        width: 209
+        height: 532
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4d13e5c87250a120800000000000000
+      internalID: 2423027278194875724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerAir_1
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 306
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac2cac439e41b9670800000000000000
+      internalID: 8546447709711286986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerAir_2
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 5
+        width: 210
+        height: 533
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5685e5045614ffcc0800000000000000
+      internalID: -3675146867783608219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerAir_3
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 306
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 348942c5a10f62480800000000000000
+      internalID: -8924181615582341053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerAir_4
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 5
+        width: 210
+        height: 534
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f24a10a072b9885a0800000000000000
+      internalID: -6518789868644883409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerAir_5
+      rect:
+        serializedVersion: 2
+        x: 802
+        y: 307
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93421f4258b615a10800000000000000
+      internalID: 1896415137694295097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerAir_6
+      rect:
+        serializedVersion: 2
+        x: 815
+        y: 5
+        width: 210
+        height: 534
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21092bfb6ab6c7850800000000000000
+      internalID: 6376089536374673426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerAir_7
+      rect:
+        serializedVersion: 2
+        x: 1074
+        y: 308
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a4b561adaa276a80800000000000000
+      internalID: -8473757248648792922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerAir_8
+      rect:
+        serializedVersion: 2
+        x: 1087
+        y: 5
+        width: 210
+        height: 535
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4049cdba2766fb60800000000000000
+      internalID: 7779518839599480907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerAir_9
+      rect:
+        serializedVersion: 2
+        x: 1346
+        y: 308
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1861aba3c19dbf700800000000000000
+      internalID: 575292092687455873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerAir_10
+      rect:
+        serializedVersion: 2
+        x: 1359
+        y: 5
+        width: 210
+        height: 536
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffc62d9a2e9590de0800000000000000
+      internalID: -1366462181883613953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerAir_11
+      rect:
+        serializedVersion: 2
+        x: 1618
+        y: 308
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c3ebdf794569d750800000000000000
+      internalID: 6330202117598077891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerAir_12
+      rect:
+        serializedVersion: 2
+        x: 1631
+        y: 5
+        width: 210
+        height: 536
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4e26415322069e10800000000000000
+      internalID: 2203951418355101262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerAir_13
+      rect:
+        serializedVersion: 2
+        x: 1890
+        y: 309
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64b2d2bc3ff9eaf80800000000000000
+      internalID: -8093355610903598266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerAir_14
+      rect:
+        serializedVersion: 2
+        x: 1903
+        y: 69
+        width: 196
+        height: 472
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67e24b1596b6b13e0800000000000000
+      internalID: -2081952302642221450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerAir_15
+      rect:
+        serializedVersion: 2
+        x: 2162
+        y: 310
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97d192c6836990b20800000000000000
+      internalID: 3101174987498265977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerAir_16
+      rect:
+        serializedVersion: 2
+        x: 2175
+        y: 5
+        width: 210
+        height: 536
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 831179cc6e6a31ad0800000000000000
+      internalID: -2732657038678617800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerAir_17
+      rect:
+        serializedVersion: 2
+        x: 2434
+        y: 309
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81cec08a053e73f60800000000000000
+      internalID: 8014123997485394968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerAir_18
+      rect:
+        serializedVersion: 2
+        x: 2447
+        y: 5
+        width: 210
+        height: 536
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94d93d07515aa7870800000000000000
+      internalID: 8681432743215865161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerAir_19
+      rect:
+        serializedVersion: 2
+        x: 2706
+        y: 308
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fc111cfae2eef7c0800000000000000
+      internalID: -4035538717198181127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerAir_20
+      rect:
+        serializedVersion: 2
+        x: 2719
+        y: 5
+        width: 210
+        height: 534
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d2d30d40372453b0800000000000000
+      internalID: -5524747754472746285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerAir_21
+      rect:
+        serializedVersion: 2
+        x: 2978
+        y: 308
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60fbb8867323b2ae0800000000000000
+      internalID: -1573108431277277434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerAir_22
+      rect:
+        serializedVersion: 2
+        x: 2991
+        y: 5
+        width: 210
+        height: 534
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 254e7653fc9bde610800000000000000
+      internalID: 1652180937920210002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerAir_23
+      rect:
+        serializedVersion: 2
+        x: 3251
+        y: 307
+        width: 12
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de13e20b9097780f0800000000000000
+      internalID: -1114789300233424403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerAir_24
+      rect:
+        serializedVersion: 2
+        x: 3263
+        y: 5
+        width: 210
+        height: 534
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76713a9b1485aeb80800000000000000
+      internalID: -8364776318576683161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerAir_25
+      rect:
+        serializedVersion: 2
+        x: 3522
+        y: 306
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e4ef74ac64e29080800000000000000
+      internalID: -9182025534987574041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerAir_26
+      rect:
+        serializedVersion: 2
+        x: 3535
+        y: 5
+        width: 210
+        height: 532
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 609aa07f3c41837a0800000000000000
+      internalID: -6397340438783940346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerAir_27
+      rect:
+        serializedVersion: 2
+        x: 3794
+        y: 306
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96698fa3e2f781c80800000000000000
+      internalID: -8351785672423991703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
