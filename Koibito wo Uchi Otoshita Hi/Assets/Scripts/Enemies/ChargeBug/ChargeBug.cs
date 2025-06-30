@@ -12,7 +12,7 @@ public class ChargeBug : Enemy
     protected override void Awake()
     {
         base.Awake();
-        detectRange = 5.0f;
+        detectRange = 10.0f;
         moveState = new ChargeBugMoveState(stateMachine,this, this, "Move");
         battleState = new ChargeBugBattleState(stateMachine,this, this, "Battle");
         attackState = new ChargeBugAttackState(stateMachine, this, this, "Attack");
@@ -21,9 +21,9 @@ public class ChargeBug : Enemy
     protected override void Start()
     {
         base.Start();
-        health = 10.0f;
-        this.moveSpeed = 1.5f;
-        this.attackCoolDown = 5.0f;
+        health = 24.0f;
+        moveSpeed = 1.5f;
+        attackCoolDown = 5.0f;
         stateMachine.Initialize(moveState);
     }
     protected override void Update()

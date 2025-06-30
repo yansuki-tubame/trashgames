@@ -13,7 +13,6 @@ public class Enemy : Entity
     private GameObject player;
     [Header("Attack Info")]
     public float health;
-    public float hearRange;
     public float detectRange;
     public float contactDamage;
     public float attackDistance = 1.0f;
@@ -38,10 +37,7 @@ public class Enemy : Entity
     public virtual RaycastHit2D IsPlayerBlocked() => Physics2D.Raycast(transform.position, player.transform.position - transform.position, Vector2.Distance(transform.position, player.transform.position), BlockLayer);
     public bool IsPlayerSeen()
     {
-        Vector2 A = player.transform.position - transform.position;
-        Vector2 B = new Vector2(facingDir, 0);
-        float angle = Vector2.Angle(A, B);
-        if ((angle < 45.0f && !IsPlayerBlocked() && Vector2.Distance(transform.position, player.transform.position) <= detectRange) || Vector2.Distance(transform.position, player.transform.position) <= hearRange * player.GetComponent<Player2>().detectRatio)
+        if (!IsPlayerBlocked() && Vector2.Distance(transform.position, player.transform.position) <= detectRange * player.GetComponent<Player2>().detectRatio)
         {
             return true;
         }

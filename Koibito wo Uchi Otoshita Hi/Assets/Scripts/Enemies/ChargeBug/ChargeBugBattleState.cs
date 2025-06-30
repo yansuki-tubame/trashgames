@@ -26,18 +26,11 @@ public class ChargeBugBattleState : EnemyState
         {
             stateMachine.ChangeState(enemy.attackState);
         }
-        if (enemy.isWallDetected() || Vector2.Distance(enemy.transform.position, player.transform.position) > 20)
+        if (enemy.isWallDetected() || Vector2.Distance(enemy.transform.position, player.transform.position) > 12)
         {
+            enemy.Flip();
             stateMachine.ChangeState(enemy.moveState);
         }
-        /*if (player.position.x > enemy.transform.position.x)
-        {
-            moveDir = 1;
-        }
-        else if (player.position.x < enemy.transform.position.x)
-        {
-            moveDir = -1;
-        }*/
         enemy.SetVelocity(enemy.moveSpeed * enemy.facingDir * 8.0f, enemy.rb.velocity.y);
     }
 }

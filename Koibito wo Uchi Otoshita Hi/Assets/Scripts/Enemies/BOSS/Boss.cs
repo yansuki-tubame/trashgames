@@ -17,7 +17,6 @@ public class Boss : Enemy
     {
         base.Awake();
         bulletsummoner = gameObject.AddComponent<BulletSpawner>();
-        hearRange = 25.0f;
         detectRange = 25.0f;
         idleState = new BossIdleState(stateMachine, this, this, "Idle");
         moveState = new BossMoveState(stateMachine, this, this, "Move");

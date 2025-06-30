@@ -25,7 +25,7 @@ public class Entity : MonoBehaviour
         this.WallLayer = LayerMask.GetMask("Wall");
         this.BlockLayer = 1 << LayerMask.NameToLayer("Ground") | 1 << LayerMask.NameToLayer("Wall");
         this.groundCheckDistance = 0.1f;
-        this.wallCheckDistance = 0.6f;
+        this.wallCheckDistance = 0.8f;
     }
     //获取组件
     protected virtual void Start()

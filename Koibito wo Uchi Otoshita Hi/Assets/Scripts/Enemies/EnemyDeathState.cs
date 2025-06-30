@@ -16,6 +16,8 @@ public class EnemyDeathState : EnemyState
     {
         base.Enter();
         enemy.rb.gravityScale = 0;
+        enemy.SetVelocity(0.0f, 0.0f);
+        enemy.GetComponent<Collider2D>().enabled = false;
         obj = enemy.gameObject;
         player = GameObject.Find("Player").GetComponent<Player2>();
         player.currentEnergy = (player.currentEnergy + 0.3f) <= player.maxEnergy ? player.currentEnergy + 0.3f : player.maxEnergy;

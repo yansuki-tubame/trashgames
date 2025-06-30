@@ -14,7 +14,6 @@ public class ShootBug : Enemy
     {
         base.Awake();
         bulletsummoner = gameObject.AddComponent<BulletSpawner>();
-        hearRange = 7.0f;
         detectRange = 12.0f;
         idleState = new ShootBugIdleState(stateMachine, this, this, "Idle");
         moveState = new ShootBugMoveState(stateMachine, this, this, "Move");

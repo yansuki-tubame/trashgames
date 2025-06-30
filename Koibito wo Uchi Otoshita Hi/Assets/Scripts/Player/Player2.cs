@@ -96,7 +96,7 @@ public class Player2 : Entity
         {
             isCharging = false;
             float speed = Mathf.Min(20 + 10 * chargeTime, 60.0f);
-            float damage = Mathf.Min(2 + 20 * chargeTime, 80.0f);
+            float damage = Mathf.Min(2 + 20 * chargeTime, 40.0f);
             chargeTime = 0.0f;
             Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             Vector2 vec = (mousePos - (Vector2)(transform.position)).normalized;

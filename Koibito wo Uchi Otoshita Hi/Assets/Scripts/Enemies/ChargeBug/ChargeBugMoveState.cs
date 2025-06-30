@@ -26,13 +26,13 @@ public class ChargeBugMoveState : EnemyState
         base.Update();
         
         enemy.SetVelocity(enemy.moveSpeed * enemy.facingDir, enemy.rb.velocity.y);
-        if (enemy.IsPlayerSeen())
-        {
-            stateMachine.ChangeState(enemy.battleState);
-        }
         if (enemy.isWallDetected())
         {
             enemy.Flip();
+        }
+        if (enemy.IsPlayerSeen())
+        {
+            stateMachine.ChangeState(enemy.battleState);
         }
     }
 }

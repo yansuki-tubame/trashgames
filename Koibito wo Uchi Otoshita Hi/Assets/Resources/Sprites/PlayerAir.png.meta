@@ -211,9 +211,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 5
-        width: 209
-        height: 532
+        y: 0
+        width: 272
+        height: 543
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -231,10 +231,10 @@ TextureImporter:
       name: PlayerAir_1
       rect:
         serializedVersion: 2
-        x: 258
-        y: 306
-        width: 13
-        height: 16
+        x: 272
+        y: 0
+        width: 272
+        height: 543
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -252,10 +252,10 @@ TextureImporter:
       name: PlayerAir_2
       rect:
         serializedVersion: 2
-        x: 271
-        y: 5
-        width: 210
-        height: 533
+        x: 544
+        y: 0
+        width: 272
+        height: 543
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -273,10 +273,10 @@ TextureImporter:
       name: PlayerAir_3
       rect:
         serializedVersion: 2
-        x: 530
-        y: 306
-        width: 13
-        height: 17
+        x: 816
+        y: 0
+        width: 272
+        height: 543
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -294,10 +294,10 @@ TextureImporter:
       name: PlayerAir_4
       rect:
         serializedVersion: 2
-        x: 543
-        y: 5
-        width: 210
-        height: 534
+        x: 1088
+        y: 0
+        width: 272
+        height: 543
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -315,10 +315,10 @@ TextureImporter:
       name: PlayerAir_5
       rect:
         serializedVersion: 2
-        x: 802
-        y: 307
-        width: 13
-        height: 16
+        x: 1360
+        y: 0
+        width: 272
+        height: 543
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -336,10 +336,10 @@ TextureImporter:
       name: PlayerAir_6
       rect:
         serializedVersion: 2
-        x: 815
-        y: 5
-        width: 210
-        height: 534
+        x: 1632
+        y: 0
+        width: 272
+        height: 543
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -357,10 +357,10 @@ TextureImporter:
       name: PlayerAir_7
       rect:
         serializedVersion: 2
-        x: 1074
-        y: 308
-        width: 13
-        height: 16
+        x: 1904
+        y: 0
+        width: 272
+        height: 543
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -378,10 +378,10 @@ TextureImporter:
       name: PlayerAir_8
       rect:
         serializedVersion: 2
-        x: 1087
-        y: 5
-        width: 210
-        height: 535
+        x: 2176
+        y: 0
+        width: 272
+        height: 543
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -399,10 +399,10 @@ TextureImporter:
       name: PlayerAir_9
       rect:
         serializedVersion: 2
-        x: 1346
-        y: 308
-        width: 13
-        height: 17
+        x: 2448
+        y: 0
+        width: 272
+        height: 543
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -420,10 +420,10 @@ TextureImporter:
       name: PlayerAir_10
       rect:
         serializedVersion: 2
-        x: 1359
-        y: 5
-        width: 210
-        height: 536
+        x: 2720
+        y: 0
+        width: 272
+        height: 543
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -441,10 +441,10 @@ TextureImporter:
       name: PlayerAir_11
       rect:
         serializedVersion: 2
-        x: 1618
-        y: 308
-        width: 13
-        height: 17
+        x: 2992
+        y: 0
+        width: 272
+        height: 543
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -462,10 +462,10 @@ TextureImporter:
       name: PlayerAir_12
       rect:
         serializedVersion: 2
-        x: 1631
-        y: 5
-        width: 210
-        height: 536
+        x: 3264
+        y: 0
+        width: 272
+        height: 543
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -483,10 +483,10 @@ TextureImporter:
       name: PlayerAir_13
       rect:
         serializedVersion: 2
-        x: 1890
-        y: 309
-        width: 13
-        height: 17
+        x: 3536
+        y: 0
+        width: 272
+        height: 543
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -500,311 +500,31 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: PlayerAir_14
-      rect:
-        serializedVersion: 2
-        x: 1903
-        y: 69
-        width: 196
-        height: 472
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 67e24b1596b6b13e0800000000000000
-      internalID: -2081952302642221450
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PlayerAir_15
-      rect:
-        serializedVersion: 2
-        x: 2162
-        y: 310
-        width: 13
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 97d192c6836990b20800000000000000
-      internalID: 3101174987498265977
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PlayerAir_16
-      rect:
-        serializedVersion: 2
-        x: 2175
-        y: 5
-        width: 210
-        height: 536
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 831179cc6e6a31ad0800000000000000
-      internalID: -2732657038678617800
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PlayerAir_17
-      rect:
-        serializedVersion: 2
-        x: 2434
-        y: 309
-        width: 13
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 81cec08a053e73f60800000000000000
-      internalID: 8014123997485394968
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PlayerAir_18
-      rect:
-        serializedVersion: 2
-        x: 2447
-        y: 5
-        width: 210
-        height: 536
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 94d93d07515aa7870800000000000000
-      internalID: 8681432743215865161
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PlayerAir_19
-      rect:
-        serializedVersion: 2
-        x: 2706
-        y: 308
-        width: 13
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9fc111cfae2eef7c0800000000000000
-      internalID: -4035538717198181127
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PlayerAir_20
-      rect:
-        serializedVersion: 2
-        x: 2719
-        y: 5
-        width: 210
-        height: 534
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3d2d30d40372453b0800000000000000
-      internalID: -5524747754472746285
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PlayerAir_21
-      rect:
-        serializedVersion: 2
-        x: 2978
-        y: 308
-        width: 13
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 60fbb8867323b2ae0800000000000000
-      internalID: -1573108431277277434
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PlayerAir_22
-      rect:
-        serializedVersion: 2
-        x: 2991
-        y: 5
-        width: 210
-        height: 534
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 254e7653fc9bde610800000000000000
-      internalID: 1652180937920210002
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PlayerAir_23
-      rect:
-        serializedVersion: 2
-        x: 3251
-        y: 307
-        width: 12
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: de13e20b9097780f0800000000000000
-      internalID: -1114789300233424403
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PlayerAir_24
-      rect:
-        serializedVersion: 2
-        x: 3263
-        y: 5
-        width: 210
-        height: 534
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 76713a9b1485aeb80800000000000000
-      internalID: -8364776318576683161
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PlayerAir_25
-      rect:
-        serializedVersion: 2
-        x: 3522
-        y: 306
-        width: 13
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7e4ef74ac64e29080800000000000000
-      internalID: -9182025534987574041
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PlayerAir_26
-      rect:
-        serializedVersion: 2
-        x: 3535
-        y: 5
-        width: 210
-        height: 532
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 609aa07f3c41837a0800000000000000
-      internalID: -6397340438783940346
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PlayerAir_27
-      rect:
-        serializedVersion: 2
-        x: 3794
-        y: 306
-        width: 13
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 96698fa3e2f781c80800000000000000
-      internalID: -8351785672423991703
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: ceaf34619f083714896c41058e8eac61
     internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      PlayerAir_0: 2423027278194875724
+      PlayerAir_1: 8546447709711286986
+      PlayerAir_10: -1366462181883613953
+      PlayerAir_11: 6330202117598077891
+      PlayerAir_12: 2203951418355101262
+      PlayerAir_13: -8093355610903598266
+      PlayerAir_2: -3675146867783608219
+      PlayerAir_3: -8924181615582341053
+      PlayerAir_4: -6518789868644883409
+      PlayerAir_5: 1896415137694295097
+      PlayerAir_6: 6376089536374673426
+      PlayerAir_7: -8473757248648792922
+      PlayerAir_8: 7779518839599480907
+      PlayerAir_9: 575292092687455873
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
